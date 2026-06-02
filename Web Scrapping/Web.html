@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+
+
+
+<html dir="rtl" lang="ar">
+    
+    <head>
+        <!-- Path to manifest.json -->
+<link rel="manifest" href="/manifest.json">
+
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="MyU">
+
+
+<!-- Chrome for Android theme color -->
+<meta name="theme-color" content="#000">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="MyU">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+    
+        <link rel="apple-touch-icon" href="/static/images/logo_icon.png" sizes="">
+    
+
+
+
+
+<link href="/static/images/icons/splash-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"/>
+
+<link href="/static/images/icons/splash-750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"/>
+
+<link href="/static/images/icons/splash-1242x2208.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image"/>
+
+<link href="/static/images/icons/splash-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image"/>
+
+<link href="/static/images/icons/splash-828x1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"/>
+
+<link href="/static/images/icons/splash-1242x2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image"/>
+
+<link href="/static/images/icons/splash-1536x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"/>
+
+<link href="/static/images/icons/splash-1668x2224.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"/>
+
+<link href="/static/images/icons/splash-1668x2388.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"/>
+
+<link href="/static/images/icons/splash-2048x2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"/>
+
+
+
+<!-- Tile for Win8 -->
+<meta name="msapplication-TileColor" content="#fff">
+
+<meta name="msapplication-TileImage" content="/static/images/logo_icon.png">
+
+
+<link rel="icon" sizes="" href="/static/images/logo_icon.png">
+
+
+<script type="text/javascript">
+    // Initialize the service worker
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/serviceworker.js', {
+            scope: '/'
+        }).then(function (registration) {
+            // Registration was successful
+            
+            console.log('django-pwa: ServiceWorker registration successful with scope: ', registration.scope);
+            
+        }, function (err) {
+            // registration failed :(
+            
+            console.log('django-pwa: ServiceWorker registration failed: ', err);
+            
+        });
+    }
+</script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Student Portal بوابة الخدمات الطلابية">
+        <meta name="author" content="mmostafa@mans.edu.eg">
+
+        <!-- Viewport metatags -->
+        <meta name="HandheldFriendly" content="true">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#493174">
+        <link rel="apple-touch-icon" href="images/logo_icon.png">
+
+        <!-- iOS webapp metatags -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="apple-touch-icon-precomposed" href="images/logo_icon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/logo_icon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/logo_icon.png">
+
+
+
+        <title>MyU</title>
+
+
+
+        <link rel="stylesheet" type="text/css" href="/static/plugins/humane/themes/original.42d4b5dabc89.css">
+
+        <link rel="stylesheet" type="text/css" href="/static/plugins/pace/pace.b254afc0ec5f.css">
+        <link rel="stylesheet" type="text/css" href="/static/plugins/fontawesome-6.5.1/css/all.min.b7afd69ef09b.css">
+        <!--<link rel="stylesheet" type="text/css" href="/static/plugins/bootstrap-5.2.1-dist/css/bootstrap.min.16b20908101a.css">-->
+        <link rel="stylesheet" type="text/css" href="/static/plugins/bootstrap4/css/bootstrap.min.f411c136e2bb.css">
+
+<!--AmaranJS Css Start-->
+    <link href="/static/plugins/amaranjs/jquery.amaran.785d5394072e.css" rel="stylesheet">
+    <link href="/static/plugins/amaranjs/theme/all-themes.486b4de22e73.css" rel="stylesheet">
+    <link href="/static/plugins/amaranjs/theme/awesome.8d660c080cb2.css" rel="stylesheet">
+    <link href="/static/plugins/amaranjs/theme/default.a31150330e61.css" rel="stylesheet">
+    <link href="/static/plugins/amaranjs/theme/blur.5ac5388c8ca5.css" rel="stylesheet">
+    <link href="/static/plugins/amaranjs/theme/user.d66fe8c43e5e.css" rel="stylesheet">
+    <link href="/static/plugins/amaranjs/theme/rounded.7a2fa0a87915.css" rel="stylesheet">
+    <link href="/static/plugins/amaranjs/theme/readmore.e8f03cbc1208.css" rel="stylesheet">
+    <link href="/static/plugins/amaranjs/theme/metro.bde79c827a7b.css" rel="stylesheet">
+
+
+    <!--AmaranJS Css End -->
+
+
+        
+<link rel="stylesheet" type="text/css" href="/static/core/login.9ae77ef59d2f.css">
+<link rel="stylesheet" type="text/css" href="/static/core/bootstrap-switch/bootstrap-switch.910315507bc6.css">
+    <style>
+        body.login-screen {
+            background-image:url("/static/core/images/bg_170.jpg"), url("/static/core/images/bg.34f06b4daa95.jpg");
+        }
+    </style>
+
+
+        <!-- Custom styles Style -->
+        <link rel="stylesheet" type="text/css" href="/static/css/style.e20cf5d23df6.css">
+        <!-- Custom styles Style End-->
+
+        <!-- Responsive Style For -->
+        <link rel="stylesheet" type="text/css" href="/static/css/responsive.2fce2d1a9c32.css">
+        <!--Responsive Style For End-->
+
+
+
+        <!-- Add a favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="/static/images/fav.a9bcc3728700.ico">
+
+        <!-- Custom styles for this template -->
+
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body class="login-screen pace-done">
+        <div class="pace  pace-inactive">
+            <div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+                <div class="pace-progress-inner"></div>
+            </div>
+            <div class="pace-activity"></div>
+        </div>
+        
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="login-box">
+                        <div class="login-content">
+                            <div class="login-user-icon">
+                                <!--<i class="fa fa-user"></i>-->
+                                <img src="/static/core/logo.4bb5b4ebcd19.png" style="width: 180px;"/>
+                            </div>
+                            <h3>بوابة الخدمات الطلابية</h3>
+                            <h5>نظام ابن الهيثم - جامعة بنها</h5>
+                        </div>
+
+                        <div class="login-form">
+                            <form id="frmLogin" novalidate action="/login" method="post" class="form-horizontal ls_form">
+                                <input type="hidden" name="csrfmiddlewaretoken" value="tgp5DaRfcN4xNGTrsclzhNIGnQakkaLM4meiMMhAuuXztRKd5ZFxb18Ev40KKSVP">
+                                <div class="input-group ls-group-input">
+                                    <input class="form-control" type="text" placeholder="اسم المستخدم" name="txtUserName" maxlength="20" required>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                    </div>
+                                </div>
+
+
+                                <div class="input-group ls-group-input">
+                                    <input type="password" placeholder="كلمة المرور" name="txtPassword" maxlength="50" class="form-control" value="" required>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                                    </div>
+                                </div>
+
+                                <div class="remember-me">
+                                    <input type="checkbox" id="chkRemember" name="chkRemember" class="switchCheckBox" data-size="mini"
+                                           data-on-text="<i class='fa fa-check'><i>"
+                                           data-off-text="<i class='fa fa-times'><i>">
+                                    <span>تذكرنى</span>
+                                </div>
+
+                                <div class="input-group ls-group-input login-btn-box">
+                                    <button class="btn ls-dark-btn col-md-12 col-sm-12 col-xs-12" >
+                                        <i class="fa fa-key"></i>
+                                    </button>
+                                    <input type="hidden" name="hdnLang" />
+                                    <a class="forgot-password"  href="javascript:void(0)"  style="font-size: 13px;">نسيت كلمة المرور</a>
+                                    
+                                </div>
+
+                                <div class="row login-btn-box"  >
+                                </div>
+                                
+                            </form>
+                        </div>
+
+                        <div class="forgot-pass-box">
+                            <form id="frmForgot" class="form-horizontal ls_form" novalidate>
+                                <input type="hidden" name="csrfmiddlewaretoken" value="tgp5DaRfcN4xNGTrsclzhNIGnQakkaLM4meiMMhAuuXztRKd5ZFxb18Ev40KKSVP">
+                                <div class="input-group ls-group-input">
+                                    <input class="form-control" type="text" placeholder="كود الطالب" name="txtStudentCode" required>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-id-card"></i></span>
+                                    </div>
+                                </div>
+                                <div class="input-group ls-group-input">
+                                    <input class="form-control" type="text" placeholder="رقم البطاقة" name="txtNationalID" required>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-address-card"></i></span>
+                                    </div>
+                                </div>
+                                <div class="input-group ls-group-input">
+                                    <input class="form-control" type="email" dir="ltr" placeholder="البريد المسجل بالنظام" name="txtUserMail" required>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                    </div>
+                                </div>
+                                <small id="emailHelp" class="form-text text-muted" style="margin-top:-10px;margin-bottom: 15px;">سيتم ارسال كلمة المرور إلى بريدك الإليكترونى</small>
+                                <div class="input-group ls-group-input login-btn-box">
+                                    <button class="btn ls-dark-btn col-md-12 col-sm-12 col-xs-12" style="font-size: 14px;">
+                                        <i class="fa fa-rocket"></i> ارسال
+                                    </button>
+
+                                    <a class="login-view" href="javascript:void(0)" style="font-size: 13px;">الدخول</a>
+
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div style="text-align: center;padding-top:15px;">
+                            <a id="btnPrivacy" href="javascript:void(0)" style="font-size: 13px;color:#ff7878;" data-toggle="modal" data-target="#policyModal"><i class="fas fa-shield-alt"></i> سياسة خصوصية وتأمين البيانات</a>
+                        </div>
+                        <div style="padding-top:15px;display: flex;" class="anchors">
+                            <a id="btnLang" href="javascript:void(0)"  style="font-size: 13px;" key-lang="en">English</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copy-right big-screen hidden-xs hidden-sm">
+            جميع الحقوق محفوظة
+            <span>©</span>
+            <a href='https://www.intlaqcit.com/' target='_blank'>شركة إنطلاق لتقنية الإتصالات والمعلومات</a>
+            <br /><span class="footer-year">2020</span>
+        </p>
+    </section>
+    <div class="modal fade" id="policyModal" tabindex="-1" role="dialog" aria-labelledby="policyModalLabel"  aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document" >
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <h6 class="modal-title" id="policyModalLabel">سياسة خصوصية وتأمين البيانات</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>جميع البيانات التي يتم تسجيلها على النظام هي ملك للجهة صاحبة هذه البيانات</li>
+                        <li>لا يتم الاطلاع على هذه البيانات من قبل مهندسي المركز إلا للضرورة القصوى ولغرض الدعم الفني وبالاتفاق مع الجهة صاحبة البيانات شفوياً أو كتابياً</li>
+                        <li>لا يتم إعطاء أي بيان من بيانات النظام لأي فرد او جهة فرعية تنتمي للجهة صاحبة البيانات او لأي جهة أخرى إلا بموافقة كتابية من الجهة صاحبة البيانات</li>
+                        <li>يمكن استخدام البيانات المسجلة على النظام بهدف عمل إحصائيات يستفاد منها فى قياس اداء النظام وكفاءة استخدامه من قبل مستخدميه</li>
+                        <li>يتم تأمين جميع البيانات الخاصة بالنظام من خلال تأمين الحاسب الخادم الذي يستضيف البيانات ومن خلال تأمين انتقال البيانات بين جهاز المستخدم والحاسب الخادم وكذلك تأمين واجهة النظام التي يستخدمها المستخدم</li>
+                        <li>كل مستخدم للنظام مسئول مسئولية كاملة عن كلمة المرور الخاصة به وعليه اتخاذ كافة الاحتياطات الممكنة حتى لا يستطيع أى شخص آخر الحصول عليها</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+        <!--
+        <div id='divAdPopup' class="l-pos-r-10" style='position:fixed;bottom:10px;display: none;'>
+            <button type="button" style="position: absolute" class="close" onclick="$('#divAdPopup').hide();">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img id="#imgAd" src="/static/images/ads/talent2.jpg" style="width: 300px;cursor: pointer;" onclick="window.open('https://talents.mans.edu.eg/',  '_blank');"/>
+        </div> -->
+        <div id="spinner-container"><div id="spinner"></div></div>
+        <div class="modal zoom" id="adsModal" tabindex="-1"  >
+            <div class="modal-dialog" >
+                <div class="modal-content" >
+                        <button type="button" style="position: absolute" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                         <img id="#imgAd" src="/static/images/ads/talent2.jpg" />
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/ar/jsi18n/"></script>
+        <script src="/static/js/lib/jquery-3.3.1.6a07da9fae93.js"></script>
+        <script src="/static/js/lib/popper.min.c5a08c518dc3.js"></script> <!-- for dropdown notification -->
+        <!--<script src="/static/plugins/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.9afc1e0eba95.js"></script>-->
+        <!--<script src="/static/plugins/bootstrap4/js/bootstrap.bundle.min.4c723f3a80b9.js"></script>-->
+
+        <!--<script src="/static/plugins/bootstrap-5.2.1-dist/js/bootstrap.min.6a599114d93c.js"></script>-->
+        <script src="/static/plugins/bootstrap4/js/bootstrap.min.6895e8cd60b6.js"></script>
+        <script src="/static/js/lib/jquery.easing.3fb364b612cc.js"></script>
+        <script src="/static/plugins/pace/pace.min.74160648218d.js"></script>
+
+        <script src="/static/plugins/jquery-lang/js.cookie.19d988c6d1e7.js"></script>
+        <!--Script for lang translation start
+        <script src="/static/plugins/jquery-lang/jquery-lang.455b853eba88.js"></script>-->
+
+        <!--Script for notification start-->
+        <script src="/static/plugins/humane/humane.min.37dae8cc8b87.js"></script>
+        <!--Script for notification end-->
+
+        <!--accessibility widget-->
+        <script src="https://website-widgets.pages.dev/dist/sienna.min.js"defer></script>
+
+        <script type="text/javascript" >
+            LANG_COOKIE = "SP_django_language";
+            //alert("ar");
+            function fix_lang_cookie() {//debugger
+                if(!Cookies.get(LANG_COOKIE)){
+                    if($("html").attr("lang")){
+                        var selected_lang = $("html").attr("lang");
+                        Cookies.set(LANG_COOKIE, selected_lang, {expires:30});
+                    }
+                }
+            }
+
+            fix_lang_cookie();
+
+
+            function on_change_lang() {
+                $('#btnLang').click(function(){
+                    var selected_lang = $(this).attr('key-lang');
+                    $.ajax({
+                        url: "/changeLang",//?app_id="+APP.currentApp,
+                        data: {'lang':selected_lang},
+                        type: "get",
+                        dataType: 'json',
+                        success: function (data) {
+                            if(data["success"]) {//debugger
+                                //selected_lang = data["lang"];
+                                Cookies.set(LANG_COOKIE, selected_lang, {expires:30});
+                                window.location = "/";
+                            }
+                        }
+                    });
+                });
+            }
+
+
+            function show_notification(noti){
+                $.amaran({
+                    content: {
+                        message: noti["title"] || get_translated_value("IMPORTANT"),
+                        size: noti["content"],
+                        file: "",
+                        icon: noti["icon"] || "fas fa-exclamation"
+                    },
+                    theme: noti["theme"] || "default warning",
+                        position: noti["position"] || "middle "+get_translated_value("LOWER_LEFT"),
+                    inEffect: noti["in_effect"] || "slide"+get_translated_value("UPPER_LEFT"),
+                    outEffect: noti["out_effect"] || "slideBottom",
+                    closeButton: noti["close_button"] || true,
+                    sticky: noti["sticky"] || true,
+                    closeOnClick: false
+                });
+            }
+        </script>
+        <!--Script for lang translation end-->
+
+    <!--AmaranJS library script Start -->
+    <script src="/static/plugins/amaranjs/jquery.amaran.11276b1e3404.js"></script>
+    <!--AmaranJS library script End   -->
+
+        
+    <script src="/static/core/login.5a5c277c53ed.js"></script>
+    <script src="/static/core/bootstrap-switch/bootstrap-switch.min.237b9ab232a5.js"></script>
+    <script src="/static/core/sjcl.2780b1aaca40.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var mans = false;
+        if(mans){
+            // talent ads
+            //$("#adsModal").modal('show');
+            //$('#divAdPopup').show();
+
+        }
+        var notis = [];
+        for(item of notis){
+            show_notification(item)
+        }
+
+        $('#registerModal').on('show.bs.modal hide.bs.modal', function (e) {
+          $("#txtRegisterIdNo").val("");
+          $("#registerModal .btn-main").removeAttr("disabled");
+          $("#div-register-feedback").hide();
+        });
+
+        
+        
+        
+        
+        
+        
+
+
+    </script>
+    <!--End of Tawk.to Script-->
+
+    </body>
+</html>
