@@ -1,0 +1,165 @@
+{
+  "32ES3300E 32ES3300G 32ES3300X": {
+    "Carton Dimensions (L*W*H) (mm)": [
+      "830 X 120 X 520"
+    ],
+    "Net Weight With Stand (Kg)": [
+      "4.5"
+    ],
+    "Gross Weight With Packaging (Kg)": [
+      "5.7"
+    ],
+    "Power Supply (V)": [
+      "100 \" 240"
+    ],
+    "Power Consumption (TV On) (W)": [
+      "55"
+    ],
+    "Power Consumption (Standby) (W)": [
+      "0.5"
+    ],
+    "TV System": [
+      "PAL, NTSC , SECAM"
+    ],
+    "Sound Output Power (W)": [
+      "2*8"
+    ],
+    "Resolution": [
+      "1366*768"
+    ]
+  },
+  "43ES3300E 43ES3300G 43ES3300X": {
+    "Carton Dimensions (L*W*H) (mm)": [
+      "1130 X 150 X 650"
+    ],
+    "Net Weight With Stand (Kg)": [
+      "7.6"
+    ],
+    "Gross Weight With Packaging (Kg)": [
+      "9.3"
+    ],
+    "Power Supply (V)": [
+      "100 \" 240"
+    ],
+    "Power Consumption (TV On) (W)": [
+      "75"
+    ],
+    "Power Consumption (Standby) (W)": [
+      "0.5"
+    ],
+    "TV System": [
+      "PAL, NTSC , SECAM"
+    ],
+    "Sound Output Power (W)": [
+      "2*10"
+    ],
+    "Resolution": [
+      "1920*1080"
+    ]
+  },
+  "50US3300E 50US3300G 50US3300X 50US5300E 50US5300G 50US5300X": {
+    "Carton Dimensions (L*W*H) (mm)": [
+      "1220*155*718"
+    ],
+    "Net Weight With Stand (Kg)": [
+      "8.09"
+    ],
+    "Gross Weight With Packaging (Kg)": [
+      "10"
+    ],
+    "Power Supply (V)": [
+      "100*240"
+    ],
+    "Power Consumption (TV On) (W)": [
+      "138"
+    ],
+    "Power Consumption (Standby) (W)": [
+      "<0.5"
+    ],
+    "TV System": [
+      "ATV PAL NTSC Secam DTV: DVB\"T2IC DVB SIS2"
+    ],
+    "Sound Output Power (W)": [
+      "2x 10"
+    ],
+    "Resolution": [
+      "3140*2160"
+    ],
+    "Wall mount dimension (mm)": [
+      "* 200*200"
+    ],
+    "Wall mount screw": [
+      "M6*10"
+    ]
+  },
+  "55US3300E 55US3300G 55US3300X 55US5300E 55US5300G 55US5300X": {
+    "Carton Dimensions (L*W*H) (mm)": [
+      "1310*165*810"
+    ],
+    "Net Weight With Stand (Kg)": [
+      "10.5"
+    ],
+    "Gross Weight With Packaging (Kg)": [
+      "12.9"
+    ],
+    "Power Supply (V)": [
+      "100*240"
+    ],
+    "Power Consumption (TV On) (W)": [
+      "138"
+    ],
+    "Power Consumption (Standby) (W)": [
+      "<0.5"
+    ],
+    "TV System": [
+      "ATV PAL NTSC Secam DTV: DVB\"T2IC DVB SIS2"
+    ],
+    "Sound Output Power (W)": [
+      "2x 10"
+    ],
+    "Resolution": [
+      "3140*2160"
+    ],
+    "Wall mount dimension (mm)": [
+      "* 200*200"
+    ],
+    "Wall mount screw": [
+      "M6*10"
+    ]
+  },
+  "65US3300E 65US3300G 65US3300X 65US5300E 65US5300G 65US5300X": {
+    "Carton Dimensions (L*W*H) (mm)": [
+      "1577*166*978"
+    ],
+    "Net Weight With Stand (Kg)": [
+      "18.2"
+    ],
+    "Gross Weight With Packaging (Kg)": [
+      "22.4"
+    ],
+    "Power Supply (V)": [
+      "100*240"
+    ],
+    "Power Consumption (TV On) (W)": [
+      "198"
+    ],
+    "Power Consumption (Standby) (W)": [
+      "<0.5"
+    ],
+    "TV System": [
+      "ATV PAL NTSC Secam DTV: DVB\"T2IC DVB SIS2"
+    ],
+    "Sound Output Power (W)": [
+      "2x 10"
+    ],
+    "Resolution": [
+      "3140*2160"
+    ],
+    "Wall mount dimension (mm)": [
+      "400*350"
+    ],
+    "Wall mount screw": [
+      "M6*10"
+    ]
+  }
+}

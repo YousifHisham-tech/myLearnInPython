@@ -1,0 +1,6 @@
+*.pth
+*.pt
+OCR\Release-26.02.0-0\
+OCR\runs\
+__pycache__\
+.ipynb_checkpoints\
